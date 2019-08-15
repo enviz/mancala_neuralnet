@@ -55,39 +55,43 @@ while(itr>0):
     #print(pit_state)
     choices = [i+7 for i, value in enumerate(pit_state[7:14]) if value != 0 ] 
     #print(choices)
-    if (choices==[]):
-        pit_state = play([5 for i in range(14)],random.randint(1,6)+1)[1]
-        choices = [i+7 for i, value in enumerate(pit_state[7:14]) if value != 0 ] 
-    
-    
-    temp = [list.copy(pit_state) for i in range(len(choices))] 
-    #print(temp)
-    
-    
-    X.append(list.copy(temp[0]))
-    
-    
-    
-    for i in range(len(temp)):
+    if (choices!=[]):
         
-        gain,state = play(temp[i],choices[i]+1)
-        gains.append(gain)
+         
+    
+        #temp contains the initial pit state because the pit states keep getting changed after its played
+        temp = [list.copy(pit_state) for i in range(len(choices))] 
+        #print(temp)
+    
+        #appending the pit state to X
+        X.append(list.copy(temp[0]))
+    
+    
+    
+        for i in range(len(temp)):
+        
+            gain,state = play(temp[i],choices[i]+1)
+            gains.append(gain)
         
 
     
-    max_index = gains.index(max(gains))
-    #print('gains:',gains)
-    #print('max_index:',max_index)
-    #print('choices:',choices)
-    Y.append([choices[max_index]+1])
-    #Remove the comment line to verify whether the loop is working fine.
-    #print('Initial:',X[-1])
-    #print('best_choice:',Y[-1])
-    #print('gain:',max(gains))
-    #print('pit_state:',temp[max_index])
+        max_index = gains.index(max(gains))
+        #print('gains:',gains)
+        #print('max_index:',max_index)
+        #print('choices:',choices)
+        #appending the best_pit choice to Y
+        Y.append([choices[max_index]+1])
+        #Remove the comment line to verify whether the loop is working fine.
+        #print('Initial:',X[-1])
+        #print('best_choice:',Y[-1])
+        #print('gain:',max(gains))
+        #print('pit_state:',temp[max_index])
     
-    #pit state after picking the pit with max gain
-    pit_state = temp[max_index]
+        #pit state after picking the pit with max gain
+        pit_state = temp[max_index]
+    
+    if (choices==[]): #reset pit states to inital state if you get an empty list
+        pit_state = play([5 for i in range(14)],random.randint(1,6)+1)[1]
     
     #if either the first 7 or last 7 pits gets empty,then the game ends and the pit is reset to the inital state
     #this is where the next game restarts 
@@ -112,4 +116,3 @@ for i in range(len(X_Y)):
     X_final.append(X_Y[i][0:14])
 sample_size = len(X_final)
 print('Sample_size=',sample_size)
-
