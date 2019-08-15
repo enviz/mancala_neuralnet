@@ -10,7 +10,7 @@ The moves between the two programs  become the dataset. They play multiple games
 
 And then a third ai, which has no idea about the game or its rules only learns from the moves generated from the two ai's playing the game.
 
-It Uses a Multinomial logistic classifier with Adam optimizer and 1 hidden layer with 28 neurons and ReLu as the activation
+It uses a Multinomial logistic classifier with Adam optimizer and 1 hidden layer with 28 neurons and ReLu as the activation
 function
 
 For more details on the rules of this game,check the wikipedia link mentioned below:
