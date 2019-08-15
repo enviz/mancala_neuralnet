@@ -9,3 +9,7 @@ This network implements a South Indian variant of the game Mancala.
 For more details on the rules of this game,check the wikipedia link mentioned below:
 
 https://en.wikipedia.org/wiki/Pallanguzhi
+
+
+Run train.py in your bash shell/command prompt.
+
