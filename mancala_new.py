@@ -90,7 +90,7 @@ while(itr>0):
     pit_state = temp[max_index]
     
     #if either the first 7 or last 7 pits gets empty,then the game ends and the pit is reset to the inital state
-    #this is where the next game restarts and the number of games played is specified by the number of iterations given
+    #this is where the next game restarts 
     if((all(v == 0 for v in pit_state[0:8]) is True) or (all(v == 0 for v in pit_state[7:14]) is True)):
         pit_state = [5 for i in range(14)]
         continue
