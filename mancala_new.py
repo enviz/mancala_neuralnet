@@ -43,7 +43,7 @@ Y = []
 
 pit_state = [5 for i in range(14)] #initial_pit state
 
-itr = 100000               #The value of itr can be changed as per your wish
+itr = 1000000               #The value of itr can be changed as per your wish
                            #NOTE: The number of iterations are not equal to number of games played. 
                            #The iteration may end in between the game,however the corresponding pit states will be saved.
                            #Just to explain that itr!=len(X_final) or len(Y_final)
