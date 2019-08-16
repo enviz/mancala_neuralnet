@@ -107,7 +107,7 @@ for i in range(len(X)):
 #For training,only unique pit states should be present
 #Here we remove the duplicates in the array of sample. Since they are generated randomly,some pit states may repeat
 X.sort()
-X_Y = list(num for num,_ in itertools.groupby(X))
+X_Y = list(X for X,_ in itertools.groupby(X))
 
 X_final = []
 Y_final = []
