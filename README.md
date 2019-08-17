@@ -12,6 +12,7 @@ And then a third ai, which has no idea about the game or its rules only learns f
 
 It uses a Multinomial logistic classifier with Adam optimizer and 1 hidden layer with 28 neurons and ReLU as the activation
 function.
+
 Run train.py in your bash shell/command prompt
 ![subplots_train_and_cv](https://user-images.githubusercontent.com/48526315/63208429-96bb0100-c0f1-11e9-868c-7251437a4341.png)
 
