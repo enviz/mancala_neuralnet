@@ -14,7 +14,7 @@ It uses a Multinomial logistic classifier with Adam optimizer and 1 hidden layer
 function.
 Run train.py in your bash shell/command prompt
 
-For more details on the rules of this game,check the wikipedia link mentioned below:
+For more details on the rules of this game,check:
 https://en.wikipedia.org/wiki/Pallanguzhi
 
 
