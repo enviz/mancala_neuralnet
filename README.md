@@ -13,8 +13,8 @@ And then a third ai, which has no idea about the game or its rules only learns f
 It uses a Multinomial logistic classifier with Adam optimizer and 1 hidden layer with 28 neurons and ReLU as the activation
 function.
 Run train.py in your bash shell/command prompt
-For more details on the rules of this game,check the wikipedia link mentioned below:
 
+For more details on the rules of this game,check the wikipedia link mentioned below:
 https://en.wikipedia.org/wiki/Pallanguzhi
 
 
