@@ -14,7 +14,9 @@ It uses a Multinomial logistic classifier with Adam optimizer and 1 hidden layer
 function.
 
 Run train.py in your bash shell/command prompt
-![subplots_train_and_cv](https://user-images.githubusercontent.com/48526315/63208429-96bb0100-c0f1-11e9-868c-7251437a4341.png)
+![subplots_train_and_cv](https://user-images.githubusercontent.com/48526315/63211346-7b60ed80-c113-11e9-98e5-06b064e1b7ac.png)
+
+
 
 
 
