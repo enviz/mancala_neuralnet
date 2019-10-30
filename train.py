@@ -19,7 +19,7 @@ ips,ops = X_final,Y_final
 
 history = model.fit(ips,ops,batch_size=sample_size,epochs=epochs,validation_split=0.2,verbose=1)
 
-model.save('new_model')
+model.save('new_model.h5')
 fig = plt.figure()
 p1 = fig.add_subplot(221)
 p2 = fig.add_subplot(222)
