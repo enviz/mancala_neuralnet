@@ -11,6 +11,7 @@ The moves between the two programs  become the dataset. They play multiple games
 And then a third ai, which has no idea about the game or its rules only learns from the moves generated from the two ai's playing the game.
 
     git clone https://github.com/enviz/mancala_neuralnet
+    cd mancala_neuralnet
     python train.py
 It uses a Multinomial logistic classifier with Adam optimizer and 1 hidden layer with 28 neurons and ReLU as the activation
 function.
