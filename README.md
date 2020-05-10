@@ -8,13 +8,14 @@ The dumb ai only knows the basic rules.
 The intelligent ai knows how to maximize its gain.
 The moves between the two programs  become the dataset. They play multiple games. 
 
-And then a third ai, which has no idea about the game or its rules only learns from the moves generated from the two ai's playing the game.
+And then a third ai, which has no idea about the game or its rules only learns from the moves generated from the two ai's playing the game. It uses a Multinomial logistic classifier with Adam optimizer and 1 hidden layer with 28 neurons and ReLU as the activation
+function.
+Run  this on your terminal/CLI. 
 
     git clone https://github.com/enviz/mancala_neuralnet
     cd mancala_neuralnet
     python train.py
-It uses a Multinomial logistic classifier with Adam optimizer and 1 hidden layer with 28 neurons and ReLU as the activation
-function.
+
 
 ![subplots_train_and_cv](https://user-images.githubusercontent.com/48526315/63211346-7b60ed80-c113-11e9-98e5-06b064e1b7ac.png)
 
